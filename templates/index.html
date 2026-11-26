@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskSnap Weather Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.0.5">
+    <script data-goatcounter="https://parthivcode.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <!-- FIX: Uses a safe fallback class 'temp-cool' and condition 'clear' if weather data is initializing -->
 <body class="{{ weather.temp_class if weather and weather.temp_class else 'temp-cool' }}" 
